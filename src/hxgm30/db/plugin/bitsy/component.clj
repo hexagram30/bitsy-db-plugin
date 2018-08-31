@@ -1,8 +1,8 @@
-(ns hxgm30.graphdb.plugin.bitsy.component
+(ns hxgm30.db.plugin.bitsy.component
   (:require
-    [hxgm30.graphdb.components.config :as config]
-    [hxgm30.graphdb.plugin.bitsy.api.db :as db]
-    [hxgm30.graphdb.plugin.bitsy.api.factory :as factory]
+    [hxgm30.db.components.config :as config]
+    [hxgm30.db.plugin.bitsy.api.db :as db]
+    [hxgm30.db.plugin.bitsy.api.factory :as factory]
     [com.stuartsierra.component :as component]
     [taoensso.timbre :as log])
   (:import

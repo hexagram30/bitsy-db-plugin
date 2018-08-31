@@ -1,0 +1,10 @@
+{:logging {
+   :nss [
+     com.lambdazen.bitsy
+     hxgm30]
+   :level :debug}
+ :backend {
+   :plugin :bitsy
+   :bitsy {
+     :protocol "file"
+     :path "data/bitsy"}}}

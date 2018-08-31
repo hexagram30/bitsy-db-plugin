@@ -1,13 +1,13 @@
-(ns hxgm30.graphdb.api.impl.bitsy.db
+(ns hxgm30.db.api.impl.bitsy.db
   (:require
-    [hxgm30.graphdb.util :as util])
+    [hxgm30.common.util :as util])
   (:import
     (com.lambdazen.bitsy BitsyGraph)
     (com.lambdazen.bitsy UUID)
     (com.lambdazen.bitsy.wrapper BitsyAutoReloadingGraph))
   (:refer-clojure :exclude [flush]))
 
-(load "/hxgm30/graphdb/plugin/protocols/db")
+(load "/hxgm30/db/plugin/protocols/db")
 
 (defn -add-edge
   [this src dst label]

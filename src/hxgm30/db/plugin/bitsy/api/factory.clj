@@ -1,4 +1,4 @@
-(ns hxgm30.graphdb.plugin.bitsy.api.factory
+(ns hxgm30.db.plugin.bitsy.api.factory
   (:require
     [clojure.java.io :as io])
   (:import
@@ -7,7 +7,7 @@
     (java.net URI)
     (java.nio.file Paths)))
 
-(load "/hxgm30/graphdb/plugin/protocols/factory")
+(load "/hxgm30/db/plugin/protocols/factory")
 
 (defn- create-data-dir!
   [file]
