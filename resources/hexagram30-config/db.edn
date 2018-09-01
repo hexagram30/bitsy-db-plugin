@@ -7,4 +7,4 @@
    :plugin :bitsy
    :bitsy {
      :protocol "file"
-     :path "data/bitsy"}}}
+     :path "data/graphdb/bitsy"}}}

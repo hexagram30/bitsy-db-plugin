@@ -15,14 +15,15 @@
        "\u001B[35m]\u001B[33m λ\u001B[m=> "))
 
 (defproject hexagram30/bitsy-db-plugin "0.1.0-SNAPSHOT"
-  :description "A hexagram30 db plugin for the bitsy db "
-  :url "https://github.com/hexagram30/graphdb"
+  :description "A hexagram30 db plugin for the bitsy db"
+  :url "https://github.com/hexagram30/bitsy-db-plugin"
   :license {
     :name "Apache License, Version 2.0"
     :url "http://www.apache.org/licenses/LICENSE-2.0"}
   :dependencies [
     [clojusc/system-manager "0.3.0-SNAPSHOT"]
     [clojusc/twig "0.3.3"]
+    [com.lambdazen.bitsy/bitsy "3.0.3"]
     [hexagram30/common "0.1.0-SNAPSHOT"]
     [hexagram30/db-plugin "0.1.0-SNAPSHOT"]
     [org.clojure/clojure "1.9.0"]]
@@ -63,10 +64,7 @@
       :jvm-opts ["-XX:MaxDirectMemorySize=512g"]
       :main hxgm30.graphdb.server}
     :bitsy-plugin {
-      :source-paths ["plugins/bitsy"]
-      :dependencies [
-        [com.lambdazen.bitsy/bitsy "3.0.3"]
-        [hexagram30/bitsy-db-plugin "0.1.0-SNAPSHOT"]]}}
+      :source-paths ["plugins/bitsy"]}}
   :aliases {
     ;; Dev Aliases
     "repl" ["do"
